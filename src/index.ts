@@ -39,9 +39,9 @@
 
 
 
-import { User } from "./models/User";
+// import { User } from "./models/User";
 
-const user = new User({ id: 1 });
+// const user = new User({ id: 1 });
 
-user.set({ name: 'NAMEE', age: 999 });
-user.save();
+// user.set({ name: 'NAMEE', age: 999 });
+// user.save();
