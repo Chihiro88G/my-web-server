@@ -13,10 +13,10 @@ export class Attributes<T extends object> {
   // <K extends keyof T> = generic constraints
   // T and K in this case could be either 'name', 'age', 'id'
   // T[K]: return an obj with K out of T 
-  get<K extends keyof T>(key: K): T[K] {
+  // make it to arrow function so 'this' is always instance of attributes we create
+  get = <K extends keyof T>(key: K): T[K] => {
     return this.data[key];
   }
-
 
   set(update: T): void {
     // this.data = update;
