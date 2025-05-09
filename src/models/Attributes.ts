@@ -22,4 +22,8 @@ export class Attributes<T extends object> {
     // this.data = update;
     Object.assign(this.data, update);
   }
+
+  getAll(): T {
+    return this.data;
+  }
 }
